@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Conten-Type" content="text/html; charset=UTF-8"/>
+    <meta name="Author" content="Jose Arias"/>
+    <title>Koombea Movie</title>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link type="image/x-icon" href="images/favicon.png" rel="icon" /> 
+    <link type="image/x-icon" href="images/favicon.png" rel="shortcut icon" />
+
+    <script id="movies-template" type="text/x-handlebars-template">
+      <div class="template-movie-container">
+        <img id="{{ id }}" class="template-movie__image" src="http://image.tmdb.org/t/p/w300/{{ poster_path }}" alt="Movie"/>
+        <h1 class="template-movie__title">{{ original_title }}</h1>
+        <p class="template-movie__release-date">{{ release_date }}</p>
+      </div>
+    </script>
+
+    <script id="similar-movies-template" type="text/x-handlebars-template">
+      <div class="similar-container">
+        <div class="similar-movies__image-container">
+          <img id="{{ id }}" class="similar-movies__image" src="http://image.tmdb.org/t/p/w300/{{ poster_path }}" alt="Movie {{ title }}"/>
+        </div>
+        <div class="similar-movies__other-date-container">
+          <h3 class="similar-movies__title">{{ original_title }}</h3>
+          <p class="similar-movies__release_date">{{ release_date }}</p>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+  </head>
+  <body>
+  <header class="main-header">
+    <h1 class="main-header__title">Koombea <span class="main-header-title__color">Movies</span></h1>
+  </header>
+  <div class="movie-container">
+    <div id="movie__movies" class="movie__movies"></div>
+    <div class="movie__information">
+        <iframe id="video-trailer" width="490" height="255" frameborder="0" allowfullscreen></iframe>
+      <div class="movie-information__details-container">
+        <h1 class="movie-information-details__title"></h1>
+        <p class="movie-information-details__overview"></p>
+        <div class="movie-information__similar-movies-container">
+          <h2 class="similar-movies__sub-title">Similar Movies</h2>
+          <div id="similar-movies-container" class="similar-movies__similar-container">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

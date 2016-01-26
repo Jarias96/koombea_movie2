@@ -1,0 +1,175 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
+.movie-container {
+  background-color: rgba(52,52,52,0.83); 
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 47px;
+}
+
+.main-header {
+  background-color: #000000;
+  height: 47px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.main-header__title {
+  color: #E3E1E1;
+  font-family: helvetica;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 9px 0 10px 30px;
+}
+
+.main-header-title__color {
+  color: #509EF8;
+}
+
+.movie__information {
+  bottom: 0;
+  display: inline-block;
+  left: 259px;
+  padding-top: 44px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+}
+
+.movie__movies {
+  background-color: rgba(38,38,38,0.73);
+  bottom: 0;
+  display: inline-block;
+  left: 0;
+  overflow: scroll;
+  position: absolute;
+  top: 0;
+  width: 259px;
+}
+
+.template-movie-container {
+  display: inline-block;
+  margin: 35px 69px 7px 71px;
+}
+
+.template-movie__image {
+  border-radius: 7px;
+  border: 1px solid black;
+  cursor: pointer;
+  height: 150px;
+  width: 100px;
+}
+
+.template-movie__image:hover {
+  border-color: #60B0FA;
+}
+
+.template-movie__title {
+  color: #E3E1E1;
+  font-family: helvetica;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.template-movie__release-date {
+  color: #7B7B7B;
+  font-family: helvetica;
+  font-size: 12px;
+  line-height: 27px;
+}
+
+.movie-information__details-container {
+  background-color: rgba(16,16,16,0.76);
+  border-radius: 14px;
+  bottom: 46px;
+  font-family: helvetica;
+  left: 44px;
+  padding: 25px 40px 32px 33px;
+  position: absolute;
+  right: 49px;
+  text-align: left;
+}
+
+h1.movie-information-details__title {
+  color: #58A5FF;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 11px;
+}
+
+p.movie-information-details__overview {
+  color: #AFAFAF;
+  font-weight: lighter;
+  line-height: 21px;
+  margin-bottom: 12px;
+}
+
+.similar-movies__sub-title {
+  color: #58A5FF;
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 14px;
+}
+
+.similar-container {
+  display: inline-block;
+  width: 33%;
+}
+
+.similar-movies__image {
+  border-radius: 5px; 
+  border: 1px solid black;
+  height: 85px;
+  width: 56.67px;
+}
+
+.similar-movies__image:hover {
+  border-color: #60B0FA;
+  cursor: pointer;
+}
+
+.similar-movies__title {
+  color: #DEDEDE;
+  font-size: 14px;
+  line-height: 27px;
+}
+
+.similar-movies__release_date {
+  color: #7B7B7B;
+  font-size: 12px;
+  line-height: 27px;
+}
+
+.similar-movies__image-container, .similar-movies__other-date-container {
+  display: inline-block;
+}
+
+.similar-movies__image-container {
+  width: 53px;
+}
+
+.similar-movies__other-date-container {
+  padding-left: 33px;
+  vertical-align: top;
+  width: 51%;
+}
+
+
+
+
+
